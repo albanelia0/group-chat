@@ -3,15 +3,20 @@ import React from 'react'
 import './index.scss'
 
 const baseClass = 'GC-ListChat'
-const listMessages = `${baseClass}-ul`
+const contentListMessages = `${baseClass}-ul`
+const listMessages = `${contentListMessages}-li`
+
 
 const ListChat = ({messages}) => {
   return (
     <div className={baseClass}>
-      <ul className={listMessages}>
+      <ul className={contentListMessages}>
         {messages.map(message => {
           return (
-              <li key={message.id}>{message.name}:  {message.text}</li>
+              <li
+                className={listMessages}
+                key={message.id}
+              >{message.name}:  {message.text}</li>
               )
           })}
       </ul>

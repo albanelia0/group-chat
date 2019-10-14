@@ -3,7 +3,12 @@
   &-ul {
     list-style: none;
     padding-left: 0;
-    font-size: 18px;
     color: #00818a;
+
+    &-li {
+      border-bottom: 1px dotted #ac936b;
+      padding-bottom: 5px;
+      text-transform: capitalize;
+    }
   }
 }
