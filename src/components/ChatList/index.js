@@ -6,7 +6,6 @@ const baseClass = 'gc-ChatList'
 const contentListMessages = `${baseClass}-ul`
 const listMessages = `${contentListMessages}-li`
 
-
 const ChatList = ({messages}) => {
   return (
     <div className={baseClass}>

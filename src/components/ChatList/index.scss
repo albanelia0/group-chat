@@ -2,6 +2,7 @@
 
 .gc-ChatList {
   height: 66vh;
+  overflow-y: scroll;
 
   &-ul {
     color: #00818a;
