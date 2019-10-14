@@ -1,8 +1,9 @@
 @import '../../style/theme.scss';
 
 .gc-ChatList {
-  height: 66vh;
+  height: 62vh;
   overflow-y: scroll;
+  margin-bottom: 10px;
 
   &-ul {
     color: #00818a;
