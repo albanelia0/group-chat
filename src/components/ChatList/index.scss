@@ -1,0 +1,29 @@
+@import '../../style/theme.scss';
+
+.GC-ChatList {
+  height: 66vh;
+  &-ul {
+    list-style: none;
+    padding-left: 0;
+    color: #00818a;
+
+    &-green {
+      color: $c-accent;
+    }
+    &-purple {
+      color: $c-purple;
+    }
+    // &-yellow {
+    //   color: $c-secondary;
+    // }
+    &-brown {
+      color: $c-brown
+    }
+
+    &-li {
+      border-bottom: 1px dotted #ac936b;
+      padding-bottom: 5px;
+      text-transform: capitalize;
+    }
+  }
+}

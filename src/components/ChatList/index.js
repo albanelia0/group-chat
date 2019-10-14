@@ -1,13 +1,15 @@
 import React from 'react'
 
+import cx from 'classnames'
+
 import './index.scss'
 
-const baseClass = 'GC-ListChat'
+const baseClass = 'GC-ChatList'
 const contentListMessages = `${baseClass}-ul`
 const listMessages = `${contentListMessages}-li`
 
 
-const ListChat = ({messages}) => {
+const ChatList = ({messages}) => {
   return (
     <div className={baseClass}>
       <ul className={contentListMessages}>
@@ -24,4 +26,4 @@ const ListChat = ({messages}) => {
   )
 }
 
-export default ListChat
+export default ChatList

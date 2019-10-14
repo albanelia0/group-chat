@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RoomChat from '../RoomChat'
+import ChatRoom from '../ChatRoom'
 
 import './index.scss';
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={baseClass}>
       <h1 className={titleClass}>GroupChat</h1>
-      <RoomChat/>
+      <ChatRoom/>
     </div>
   );
 }

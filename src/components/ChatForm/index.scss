@@ -2,18 +2,17 @@
 
 
 
-.GC-ContentFormChat{
+.GC-ContentChatForm{
   &-form {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    &-input, &-inputUser {
+    &-input, &-userInput {
       background-color: transparent;
       border-radius: 7px;
       border: 1px $c-purple solid;
       color: $c-accent;
       font-size: 18px;
-      margin-right: 7px;
       padding: 5px;
     }
     &-button {
@@ -23,7 +22,7 @@
       font-size: 18px;
       padding: 5px;
     }
-    &-inputUser {
+    &-userInput {
       max-width: 150px;
       text-transform: capitalize;
     }
