@@ -2,28 +2,28 @@ import React from 'react'
 
 import './index.scss'
 
-const baseClass = 'GC-ContentChatForm'
-const FormClass = `${baseClass}-form`
-const inputClass = `${FormClass}-input`
-const buttonClass = `${FormClass}-button`
-const userInputClass = `${FormClass}-userInput`
+const baseClass = 'gc-ContentChatForm'
+const formClass = `${baseClass}-form`
+const inputClass = `${formClass}-input`
+const buttonClass = `${formClass}-button`
+const userInputClass = `${formClass}-userInput`
 
 const ChatForm = ({
   onInputSubmit,
   onInputChange,
   inputValue,
   userName,
-  onUserInsertName
+  onUserNameChange
 }) => {
   return(
     <div className={baseClass}>
-      <form className={FormClass} onSubmit={onInputSubmit}>
+      <form className={formClass} onSubmit={onInputSubmit}>
         <input
           className={userInputClass}
           value={userName}
           type="text"
           placeholder="Insert your name"
-          onChange={onUserInsertName}/>
+          onChange={onUserNameChange}/>
         <input
           className={inputClass}
           value={inputValue}

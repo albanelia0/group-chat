@@ -4,7 +4,7 @@ import ChatRoom from '../ChatRoom'
 
 import './index.scss';
 
-const baseClass = 'GroupChatClass'
+const baseClass = 'gc-GroupChat'
 const titleClass = `${baseClass}-title`
 
 function App() {

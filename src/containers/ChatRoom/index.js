@@ -8,7 +8,7 @@ import ChatForm from '../../components/ChatForm'
 
 import './index.scss'
 
-const baseClass = 'GC-ChatRoom'
+const baseClass = 'gc-ChatRoom'
 
 const initSocket = () => {
   const urlSocket = 'http://localhost:3305'
@@ -25,8 +25,8 @@ const ChatRoom = () => {
     const connectHandler = () => {
       console.log('connected')
     }
-    const messageHandler = data => {
-      setMessages([...messages, data])
+    const messageHandler = receivedMessage => {
+      setMessages([...messages, receivedMessage])
     }
 
     // listen to server events
@@ -59,7 +59,7 @@ const ChatRoom = () => {
     setInputValue(value)
   }
 
-  const onUserInsertName = e => {
+  const onUserNameChange = e => {
     const {value} = e.target
     setUserName(value)
   }
@@ -69,7 +69,7 @@ const ChatRoom = () => {
       <ChatList messages={messages}/>
       <ChatForm
         userName={userName}
-        onUserInsertName={onUserInsertName}
+        onUserNameChange={onUserNameChange}
         onInputSubmit={onInputSubmit}
         onInputChange={onInputChange}
         inputValue={inputValue}

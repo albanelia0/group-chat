@@ -1,8 +1,9 @@
-@import '../../style/theme.scss';
+@import '../../style/theme';
 
-.GroupChatClass {
+.gc-GroupChat {
   height: 100vh;
   padding: 20px;
+
   &-title {
     background-color: $c-gray;
     border-radius: 7px;

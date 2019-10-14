@@ -1,10 +1,8 @@
 import React from 'react'
 
-import cx from 'classnames'
-
 import './index.scss'
 
-const baseClass = 'GC-ChatList'
+const baseClass = 'gc-ChatList'
 const contentListMessages = `${baseClass}-ul`
 const listMessages = `${contentListMessages}-li`
 
@@ -15,11 +13,11 @@ const ChatList = ({messages}) => {
       <ul className={contentListMessages}>
         {messages.map(message => {
           return (
-              <li
-                className={listMessages}
-                key={message.id}
-              >{message.name}:  {message.text}</li>
-              )
+            <li
+              className={listMessages}
+              key={message.id}
+            >{message.name}: {message.text}</li>
+            )
           })}
       </ul>
     </div>
